@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            name = "Forge"
+            url = "https://maven.minecraftforge.net"
+        }
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == "net.minecraftforge.gradle") {
+                useModule("net.minecraftforge.gradle:ForgeGradle:${requested.version}")
+            }
+        }
+    }
+}
+
+plugins {
+    id "org.gradle.toolchains.foojay-resolver-convention" version "0.8.0"
+}
+
+rootProject.name = "infinitylights"

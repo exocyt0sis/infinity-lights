@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "infinitylights:block/depletedwalltorch"
+    },
+    "facing=north": {
+      "model": "infinitylights:block/depletedwalltorch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "infinitylights:block/depletedwalltorch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "infinitylights:block/depletedwalltorch",
+      "y": 180
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "infinitylights:config_recycling",
+  "category": "misc",
+  "ingredient": {
+    "item": "infinitylights:depletedtorch"
+  },
+  "result": {
+    "item": "minecraft:stick",
+    "count": 1
+  },
+  "config": "TorchRecyclable"
+}
