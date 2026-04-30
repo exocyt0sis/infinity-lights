@@ -1,41 +1,70 @@
 # Styx's Infinity Lights
 
-[![Version](https://img.shields.io/badge/version-1.0.7-orange.svg)](https://github.com/exocyt0sis/infinity-lights/releases/tag/v1.0.7)
-[![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-3C8527.svg)](https://www.minecraft.net/)
-[![Forge](https://img.shields.io/badge/Forge-47.2.0+-f16436.svg)](https://files.minecraftforge.net/)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Release](https://img.shields.io/badge/status-release_ready-brightgreen.svg)](https://github.com/exocyt0sis/infinity-lights/releases/tag/v1.0.7)
+Styx's Infinity Lights for NeoForge 1.21.1 makes permanent lighting a glowstone-tier upgrade instead of the default early-game path.
 
-Giving players an incentive to venture into the Nether and explore other means of lighting settlements, this mod replaces Mojang's coal based light source progression with glowstone based crafting while retaining vanilla block IDs for compatibility.
+This codebase was ported from Forge to NeoForge 1.21.1 and now splits lighting into two families: permanent glowstone lights from the mod itself, and ordinary vanilla lights that eventually burn out.
 
-## Public Summary
-
-Infinity Lights makes lighting progression harder by requiring glowstone for torches and lanterns, encouraging Nether exploration before mass lighting becomes available.
-
-## Features
-
-- Replaces vanilla recipe progression for `minecraft:torch` and `minecraft:lantern` to require glowstone.
-- Adds depletion mechanics for active glowstone torches and lanterns (configurable).
-- Adds depleted variants with matching placement/shape behavior.
-- Adds optional recycling recipes for depleted lights (config-gated).
-- Adds Forge metadata/logo integration and configurable console messages.
+Vanilla coal-based torches, lanterns and campfires can still be crafted and used, but they now burn out over time. Permanent light instead comes from the mod's own glowstone items.
 
 ## Compatibility
 
-- Minecraft: `1.20.1`
-- Forge: `47.2.0+`
+- Minecraft: `1.21.1`
+- NeoForge: `21.1.226`
+- Java: `21`
 - Mod ID: `infinitylights`
+- Current version: `2.1`
 
-## Default Config
+## Core Gameplay
 
-Config file: `run/saves/<world>/serverconfig/infinitylights.toml` (singleplayer) or `<server>/world/serverconfig/infinitylights.toml` (dedicated server)
+- `minecraft:torch` uses vanilla coal/charcoal crafting again, but burns out after a configurable number of in-game days.
+- `minecraft:lantern` uses vanilla torch progression again, but also burns out after a configurable number of in-game days.
+- `minecraft:candle` and all vanilla candle colors burn out after a configurable number of in-game days and can be smoldered by rain.
+- `minecraft:jack_o_lantern` burns out after a configurable number of in-game days and becomes a `minecraft:carved_pumpkin`.
+- `minecraft:campfire` burns out after a configurable number of in-game days, disappears in a brief ash-like puff, and can leave `supplementaries:ash` behind when Supplementaries is installed.
+- `infinitylights:glowstone_torch` is crafted from `minecraft:glowstone_dust` and `minecraft:stick` and acts as a permanent glowstone torch.
+- `infinitylights:glowstone_lantern` is crafted from `infinitylights:glowstone_torch` and `minecraft:iron_nugget` and acts as a permanent glowstone lantern.
+- `infinitylights:glowstone_jack_o_lantern` is crafted from `minecraft:carved_pumpkin` and `infinitylights:glowstone_torch`, and can eventually deplete back into a `minecraft:carved_pumpkin`.
+- Rain can smolder vanilla torches, candles and campfires, reducing their light output and emitting restrained dark smoke particles when enabled in config.
 
-- `TorchDepletionRisk = 0`
-- `LanternDepletionRisk = 0`
-- `TorchRecyclable = false`
-- `LanternRecyclable = false`
-- `ConsoleMessages = false`
+## Added Items And Blocks
+
+- `infinitylights:glowstone_torch`
+- `infinitylights:glowstone_lantern`
+- `infinitylights:glowstone_jack_o_lantern`
+- `infinitylights:depleted_glowstone_torch`
+- `infinitylights:depleted_torch`
+- `infinitylights:depleted_lantern`
+
+## Config
+
+The mod now registers a common NeoForge config.
+
+The generated TOML starts with general settings so the most global toggle is visible immediately, then groups glowstone torch, glowstone lantern and glowstone Jack o'Lantern settings first, followed by the vanilla torch, candle, lantern, Jack o'Lantern and campfire sections.
+
+Expected config path in development runs:
+- `runs/client/config/infinitylights.toml`
+
+Expected config path in a normal Minecraft instance:
+- `.minecraft/config/infinitylights.toml`
+
+Key settings:
+
+- `GlowstoneTorchRecyclable`
+- `GlowstoneTorchDepletionRisk`
+- `GlowstoneLanternDepletionRisk`
+- `GlowstoneJackoLanternDepletionRisk`
+- `TorchBurnoutTime`
+- `TorchSmolderedByRain`
+- `CandleBurnoutTime`
+- `CandleSmolderedByRain`
+- `LanternBurnoutTime`
+- `LanternRecyclable`
+- `JackoLanternBurnoutTime`
+- `CampfireBurnoutTime`
+- `CampfireSmolderedByRain`
+- `ConsoleMessages`
 
 ## Build Artifact
 
-- `build/libs/infinitylights-1.20.1-forge-47.2.0-1.0.7.jar`
+- Preferred release command: `gradlew.bat releaseJar`
+- `build/libs/infinitylights-1.21.1-neoforge-2.1.jar`

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "infinitylights:depletedtorch"
+          "name": "infinitylights:depleted_torch"
         }
       ],
       "conditions": [

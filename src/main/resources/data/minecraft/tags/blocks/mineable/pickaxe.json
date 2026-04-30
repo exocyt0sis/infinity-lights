@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "infinitylights:depletedlantern"
+    "infinitylights:glowstone_lantern",
+    "infinitylights:burning_lantern",
+    "infinitylights:depleted_lantern"
   ]
 }

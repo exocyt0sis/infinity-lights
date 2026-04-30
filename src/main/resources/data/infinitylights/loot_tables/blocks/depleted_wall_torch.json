@@ -6,7 +6,25 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "infinitylights:depletedtorch"
+          "name": "infinitylights:depleted_torch"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "infinitylights:depleted_torch"
         }
       ],
       "conditions": [

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "infinitylights:glowstone_torch"
+          "name": "minecraft:lantern"
         }
       ],
       "conditions": [

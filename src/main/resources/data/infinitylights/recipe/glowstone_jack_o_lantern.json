@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "P",
+    "T"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:carved_pumpkin"
+    },
+    "T": {
+      "item": "infinitylights:glowstone_torch"
+    }
+  },
+  "result": {
+    "id": "infinitylights:glowstone_jack_o_lantern",
+    "count": 1
+  }
+}

@@ -2,10 +2,10 @@
   "type": "infinitylights:config_recycling",
   "category": "misc",
   "ingredient": {
-    "item": "infinitylights:depletedlantern"
+    "item": "infinitylights:depleted_lantern"
   },
   "result": {
-    "item": "minecraft:iron_nugget",
+    "id": "minecraft:iron_nugget",
     "count": 8
   },
   "config": "LanternRecyclable"

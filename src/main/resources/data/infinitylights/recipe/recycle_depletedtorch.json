@@ -2,11 +2,11 @@
   "type": "infinitylights:config_recycling",
   "category": "misc",
   "ingredient": {
-    "item": "infinitylights:depletedtorch"
+    "item": "infinitylights:depleted_glowstone_torch"
   },
   "result": {
-    "item": "minecraft:stick",
+    "id": "minecraft:stick",
     "count": 1
   },
-  "config": "TorchRecyclable"
+  "config": "GlowstoneTorchRecyclable"
 }

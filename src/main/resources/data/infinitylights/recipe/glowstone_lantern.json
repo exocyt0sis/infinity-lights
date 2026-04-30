@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     "XXX",
     "X#X",
@@ -10,11 +11,11 @@
       "item": "minecraft:iron_nugget"
     },
     "#": {
-      "item": "minecraft:glowstone"
+      "item": "infinitylights:glowstone_torch"
     }
   },
   "result": {
-    "item": "minecraft:lantern",
+    "id": "infinitylights:glowstone_lantern",
     "count": 1
   }
 }

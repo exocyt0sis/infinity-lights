@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "infinitylights:depletedlantern"
+          "name": "infinitylights:glowstone_jack_o_lantern"
         }
       ],
       "conditions": [
