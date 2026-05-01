@@ -26,6 +26,12 @@ Infinity Lights keeps vanilla block IDs for compatibility while moving permanent
 - Mod ID: `infinitylights`
 - Current version: `2.1`
 
+## Branches
+
+- `master` is the current and officially supported NeoForge 1.21.1 branch.
+- `legacy/forge-1.20.1` is a historical Forge 1.20.1 branch kept for reference and older installs.
+- The legacy Forge branch is no longer actively maintained and should not be treated as the current release line.
+
 ## Features
 
 - `minecraft:torch` uses vanilla coal/charcoal crafting again, but burns out after a configurable number of in-game days.
