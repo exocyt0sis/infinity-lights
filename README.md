@@ -1,10 +1,22 @@
 # Styx's Infinity Lights
 
+[![Version](https://img.shields.io/badge/version-2.1-orange.svg)](https://github.com/exocyt0sis/infinity-lights/releases/tag/v2.1)
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-3C8527.svg)](https://www.minecraft.net/)
+[![NeoForge](https://img.shields.io/badge/NeoForge-21.1.226-43853d.svg)](https://neoforged.net/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Release](https://img.shields.io/badge/status-release_2.1-brightgreen.svg)](https://github.com/exocyt0sis/infinity-lights/releases/tag/v2.1)
+
+Giving players an incentive to venture into the Nether and explore other means of lighting settlements, this mod replaces Mojang's coal based light source progression with glowstone based crafting while retaining vanilla block IDs for compatibility.
+
 Styx's Infinity Lights for NeoForge 1.21.1 makes permanent lighting a glowstone-tier upgrade instead of the default early-game path.
 
-This codebase was ported from Forge to NeoForge 1.21.1 and now splits lighting into two families: permanent glowstone lights from the mod itself, and ordinary vanilla lights that eventually burn out.
+This NeoForge 1.21.1 port splits lighting into two families: permanent glowstone lights from the mod itself, and ordinary vanilla lights that eventually burn out.
 
-Vanilla coal-based torches, lanterns and campfires can still be crafted and used, but they now burn out over time. Permanent light instead comes from the mod's own glowstone items.
+Vanilla coal-based torches, lanterns and campfires can still be crafted and used, but they now burn out over time. Permanent light instead comes from the mod's own glowstone-based items.
+
+## Public Summary
+
+Infinity Lights keeps vanilla block IDs for compatibility while moving permanent lighting up to glowstone-tier progression. In the NeoForge 1.21.1 line, vanilla torches, lanterns, candles, jack o'lanterns and campfires remain available, but temporary light now burns out over time while the mod's own glowstone lights fill the permanent role.
 
 ## Compatibility
 
@@ -14,7 +26,7 @@ Vanilla coal-based torches, lanterns and campfires can still be crafted and used
 - Mod ID: `infinitylights`
 - Current version: `2.1`
 
-## Core Gameplay
+## Features
 
 - `minecraft:torch` uses vanilla coal/charcoal crafting again, but burns out after a configurable number of in-game days.
 - `minecraft:lantern` uses vanilla torch progression again, but also burns out after a configurable number of in-game days.
@@ -37,9 +49,9 @@ Vanilla coal-based torches, lanterns and campfires can still be crafted and used
 
 ## Config
 
-The mod now registers a common NeoForge config.
+The mod registers a common NeoForge config.
 
-The generated TOML starts with general settings so the most global toggle is visible immediately, then groups glowstone torch, glowstone lantern and glowstone Jack o'Lantern settings first, followed by the vanilla torch, candle, lantern, Jack o'Lantern and campfire sections.
+The generated TOML starts with general settings so the most global toggle is visible immediately, then groups glowstone torch, glowstone lantern and glowstone jack o'lantern settings first, followed by the vanilla torch, candle, lantern, jack o'lantern and campfire sections.
 
 Expected config path in development runs:
 - `runs/client/config/infinitylights.toml`
