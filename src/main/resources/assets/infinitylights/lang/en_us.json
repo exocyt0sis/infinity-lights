@@ -1,6 +1,15 @@
 {
-  "block.infinitylights.depletedtorch": "Depleted Glowstone Torch",
-  "block.infinitylights.depletedlantern": "Depleted Glowstone Lantern",
-  "item.infinitylights.depletedtorch": "Depleted Glowstone Torch",
-  "item.infinitylights.depletedlantern": "Depleted Glowstone Lantern"
+  "block.infinitylights.glowstone_torch": "Glowstone Torch",
+  "block.infinitylights.glowstone_lantern": "Glowstone Lantern",
+  "block.infinitylights.glowstone_jack_o_lantern": "Glowstone Jack o'Lantern",
+  "block.infinitylights.depleted_glowstone_torch": "Depleted Glowstone Torch",
+  "block.infinitylights.depleted_torch": "Depleted Torch",
+  "block.infinitylights.depleted_lantern": "Depleted Lantern",
+  "item.infinitylights.glowstone_torch": "Glowstone Torch",
+  "item.infinitylights.glowstone_lantern": "Glowstone Lantern",
+  "item.infinitylights.glowstone_jack_o_lantern": "Glowstone Jack o'Lantern",
+  "item.infinitylights.depleted_glowstone_torch": "Depleted Glowstone Torch",
+  "item.infinitylights.depleted_torch": "Depleted Torch",
+  "item.infinitylights.depleted_lantern": "Depleted Lantern",
+  "subtitles.infinitylights.rain_hiss": "Rain hisses against the flame"
 }

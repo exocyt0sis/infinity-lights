@@ -1,0 +1,11 @@
+{
+  "rain_hiss": {
+    "subtitle": "subtitles.infinitylights.rain_hiss",
+    "sounds": [
+      "infinitylights:sizz-1",
+      "infinitylights:sizz-2",
+      "infinitylights:sizz-3",
+      "infinitylights:sizz-4"
+    ]
+  }
+}

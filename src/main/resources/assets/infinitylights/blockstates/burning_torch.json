@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "smoldering=false": {
+      "model": "minecraft:block/torch"
+    },
+    "smoldering=true": {
+      "model": "minecraft:block/torch"
+    }
+  }
+}

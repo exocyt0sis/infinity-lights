@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "infinitylights:block/depleted_torch"
+    }
+  }
+}

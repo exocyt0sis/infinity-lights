@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "infinitylights:block/depleted_lantern"
+    },
+    "hanging=true": {
+      "model": "infinitylights:block/depleted_lantern_hanging"
+    }
+  }
+}
