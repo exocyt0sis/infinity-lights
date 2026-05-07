@@ -365,14 +365,9 @@ public class InfinityLightsMod {
     }
 
     private static BlockBehaviour.Properties burningCampfireProperties() {
-        return BlockBehaviour.Properties.of()
-                .mapColor(MapColor.PODZOL)
-                .instrument(NoteBlockInstrument.BASS)
-                .strength(2.0F)
-                .sound(SoundType.WOOD)
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.CAMPFIRE)
                 .lightLevel(state -> state.getValue(CampfireBlock.LIT) ? 15 : 0)
-                .noOcclusion()
-                .ignitedByLava();
+            .noOcclusion();
     }
 
     private static String getModVersionString() {

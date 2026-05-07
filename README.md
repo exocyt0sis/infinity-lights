@@ -1,10 +1,10 @@
 # Styx's Infinity Lights
 
-[![Version](https://img.shields.io/badge/version-2.1-orange.svg)](https://github.com/exocyt0sis/infinity-lights/releases/tag/v2.1)
+[![Version](https://img.shields.io/badge/version-2.1.1-orange.svg)](https://github.com/exocyt0sis/infinity-lights/releases/tag/v2.1.1)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-3C8527.svg)](https://www.minecraft.net/)
 [![NeoForge](https://img.shields.io/badge/NeoForge-21.1.226-43853d.svg)](https://neoforged.net/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Release](https://img.shields.io/badge/status-release_2.1-brightgreen.svg)](https://github.com/exocyt0sis/infinity-lights/releases/tag/v2.1)
+[![Release](https://img.shields.io/badge/status-release_2.1.1-brightgreen.svg)](https://github.com/exocyt0sis/infinity-lights/releases/tag/v2.1.1)
 
 Giving players an incentive to venture into the Nether and explore other means of lighting settlements, this mod replaces Mojang's coal based light source progression with glowstone based crafting while retaining vanilla block IDs for compatibility.
 
@@ -24,7 +24,13 @@ Infinity Lights keeps vanilla block IDs for compatibility while moving permanent
 - NeoForge: `21.1.226`
 - Java: `21`
 - Mod ID: `infinitylights`
-- Current version: `2.1`
+- Current version: `2.1.1`
+
+## 2.1.1 Note
+
+Version 2.1.1 adds `infinitylights:burning_campfire` to `minecraft:campfires` so datapack and mod integrations that key off the vanilla campfire block tag continue to recognize Infinity Lights campfires.
+
+This is a tag-only compatibility adjustment. It does not change Infinity Lights burnout timing, smoldering, light emission, rain reactions, particles, sounds, or campfire state transitions.
 
 ## Branches
 
@@ -85,4 +91,4 @@ Key settings:
 ## Build Artifact
 
 - Preferred release command: `gradlew.bat releaseJar`
-- `build/libs/infinitylights-1.21.1-neoforge-2.1.jar`
+- `build/libs/infinitylights-1.21.1-neoforge-2.1.1.jar`
